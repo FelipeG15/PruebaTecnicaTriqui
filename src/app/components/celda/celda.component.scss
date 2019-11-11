@@ -1,0 +1,26 @@
+.celda {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 3.8em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda:hover 
+{
+    background-color: lightsteelblue;
+    cursor: pointer;
+}
+
+.vl
+{
+    border-right: 3px solid black;
+}
+
+.hl
+{
+    border-bottom: 3px solid black;
+}

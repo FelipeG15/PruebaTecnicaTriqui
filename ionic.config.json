@@ -1,0 +1,7 @@
+{
+  "name": "PruebaTecnicaTriqui",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

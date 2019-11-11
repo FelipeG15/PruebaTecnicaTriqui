@@ -1,0 +1,18 @@
+<ion-card color="primary">
+    <ion-card-header class="text" text-center>
+        <ion-card-title>{{ mensajeTitulo }}</ion-card-title>
+        <ion-card-title>{{ mensajeEstado }}</ion-card-title>
+      </ion-card-header>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <div class="tablero" *ngFor="let row of [0,1,2]">
+      <app-celda *ngFor="let col of [0,1,2];" [row]="row" [col]="col" [celda]="tablero[row][col]" (click)="seleccionar(row,col)">
+      </app-celda>
+    </div>
+    
+  </ion-card-content>
+</ion-card>
+<ion-button *ngIf="isFinJuego" class="btn btn-primary btn-nuevo" (click)="nuevoJuego()">
+    Jugar De Nuevo
+  </ion-button>
